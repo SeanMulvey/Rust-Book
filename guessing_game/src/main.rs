@@ -30,6 +30,7 @@ fn main() {
 
         println!("You guessed: {}", guess);
 
+        // Switch statement for comparison
         match guess.cmp(&secret_number) {
             Ordering::Less => println!("Too small!"),
             Ordering::Greater => println!("Too big!"),
