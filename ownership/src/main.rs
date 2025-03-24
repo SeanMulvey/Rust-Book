@@ -22,4 +22,10 @@ fn main() {
     x.pop();
     println!("{x}");
 
+    let y = String::from("Will pass ownership to z");
+
+    let z = y;
+
+    println!("{z}");
+
 }

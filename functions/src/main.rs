@@ -11,7 +11,7 @@ fn main() {
     println!("Implicit return function (function with just 5):");
     println!("  implicit_return() returns: {}", implicit_return());
     println!("Function that implicitly returns the paramter(10) * 2");
-    println!("double() returns: {}", double(10));
+    println!("  double() returns: {}", double(10));
 }
 
 fn another_function(){
