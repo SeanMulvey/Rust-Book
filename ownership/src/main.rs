@@ -22,10 +22,24 @@ fn main() {
     x.pop();
     println!("{x}");
 
-    let y = String::from("Will pass ownership to z");
+    let mut y = String::from("Will pass ownership to z");
 
-    let z = y;
+    let mut z = y;
 
     println!("{z}");
+
+    z.pop();
+    z.push_str("y");
+
+    y = z;
+
+    println!("{y}");
+
+    let mut a = String::from("hello");
+    a = String::from("ahoy");
+
+    println!("{a}, world!");
+
+    
 
 }
